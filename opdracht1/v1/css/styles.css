@@ -1,0 +1,281 @@
+@font-face {
+    font-family: ns-sans;
+    src: url(/fonts/nssans__-webfont.ttf);
+    src: url(/fonts/nssans__-webfont.woff);
+}
+
+@font-face {
+    font-family: ns-sans-bold;
+    src: url(/fonts/nssanbol-webfont.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: ns-sans, Arial, Helvetica, sans-serif;
+    background: #141414;
+    color: #000000;
+    font-size: 1rem;
+}
+
+h1 {
+    color: #003082;
+    font-size: 2.375rem;
+    font-weight: 400;
+}
+
+h2 {
+    color: #003082;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+p {
+    color: #000000;
+    font-size: 1rem;
+}
+
+input, select {
+    border-radius: 0;
+}
+
+/* ------------------------------------- */
+/*                HEADER                 */
+/* ------------------------------------- */
+
+#index-header {
+    background: url(/img/banner.jpg) center;
+    background-size: cover;
+    height: 30rem;
+    /* Bron: https://stackoverflow.com/questions/20689575/css-margin-top-of-h1-affects-parents-margin */
+    overflow: auto;
+}
+
+#index-header h1 {
+    padding: 1rem 1.5rem;
+    background: rgba(34, 57, 116, 0.8);
+    color: #ffffff;
+    max-width: 70rem;
+    margin: 21rem auto 0 auto;
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------- */
+/*               NAVIGATIE               */
+/* ------------------------------------- */
+
+nav {
+    background-color: #000000;
+    box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+    width: 100%;
+    position: fixed;
+}
+
+/*  Bron voor grids gebruik: https://cssgrid.io/ 
+    Bron voor grids gebruik: https://css-tricks.com/snippets/css/complete-guide-grid/ */
+
+nav ul {
+    max-width: 72.5rem;
+    margin: auto;
+    height: 4rem;
+    display: grid;
+    padding: 0 1.25rem;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li:nth-child(2) {
+    display: flex;
+    justify-self: end;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;   
+    margin: 0 1rem;
+}
+
+nav ul li a:hover {
+    color: #D10115;
+}
+
+#active {
+    color: #D10115;
+    font-weight: bold;
+}
+
+nav ul li p {
+    display: inline;
+    font-size: 1rem;
+}
+
+nav li:first-of-type img {
+    width: 6rem;
+}
+
+nav li:nth-of-type(2) img {
+    height: 1.4rem;
+}
+
+nav li:nth-of-type(2):last-child {
+    margin-right: 0;
+}
+
+
+/* ------------------------------------- */
+/*             FILMS LIJST               */
+/* ------------------------------------- */
+
+#films {
+    margin: 2rem 0;
+}
+
+/*  Bron voor grids gebruik: https://cssgrid.io/ 
+    Bron voor grids gebruik: https://css-tricks.com/snippets/css/complete-guide-grid/ */
+#films ul {
+    list-style-type: none;
+    display: grid;
+    max-width: 75rem;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 22rem));
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+#films li {
+    background: #000000;
+    color: #000000;
+    box-shadow: 0 .125rem 0 0 rgba(7, 7, 33, .15);
+}
+
+#films li > img {
+    width: 22rem;
+}
+
+#films li > a > img {
+    width: 22rem;
+}
+
+#films a {
+    text-decoration: none;
+}
+
+.film-details {
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+}
+
+.film-details h2 {
+    margin: 0.6rem 0 0 0;
+    color: #D10115;
+}
+
+.film-details p {
+    color: #ffffff;
+}
+
+.film-details p:nth-of-type(2) {
+    color: #69E781;
+    font-family: ns-sans-bold;
+    font-size: 0.85rem;
+    margin: 0.2rem 0 0 0;
+    border-bottom: solid 2px rgba(7, 7, 33, .15);
+}
+
+.film-details div {
+    display: flex;
+    justify-items: center;
+}
+
+.film-details input {
+    display: block;
+    padding: 0.4rem 0.4rem;
+    width: 10rem;
+    border: none;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+}
+
+/* Background transition effect: https://codepen.io/vulchivijay/pen/KwBGjX */
+.film-details img {
+    height: 2.35rem;
+    margin: 1rem 0 0 0.5rem;
+}
+
+.film-details img.verwijder {
+    background-position: left bottom;
+}
+
+/* .film-details img:nth-of-type(2) {
+    margin: 1rem 0 0 auto;
+} */
+
+.film-details input[type=submit] {
+    display: inline-block;
+    padding: 0.5rem 0.4rem;
+    font-size: 1rem;
+    width: 8.7rem;
+    color: #ffffff;
+    margin-top: 1rem;
+    border-bottom: 2px solid #B40411;
+    background: linear-gradient(to bottom, #B40411 50%, #D10115 50%);
+    background-size: 100% 200%;
+    background-position: right top;
+    transition: all .2s ease-out;
+    border-radius: none;
+}
+
+.film-details input[type=submit]:hover {
+    background-position: left bottom;
+}
+
+/* ------------------------------------- */
+/*                FOOTER                 */
+/* ------------------------------------- */
+
+footer {
+    background: #000000;
+    box-shadow: 0 0 .125rem 0 rgba(7, 7, 33, .15);
+}
+
+footer ul {
+    height: 3.5rem;
+    line-height: 1;
+    max-width: 72.5rem;
+    margin: auto;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 0 1.25rem;
+}
+
+footer li  {
+    color: #ffffff;
+}
+
+footer li img {
+    width: 3.5rem;
+}
+
+footer li:first-child {
+    justify-self: start;
+}
+
+footer li:nth-child(2) {
+    justify-self: end;
+}
+
+
