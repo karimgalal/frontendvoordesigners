@@ -11,7 +11,7 @@ Ik heb ervoor gekozen om een user interface te ontwerpen die dezelfde style heef
 [Demo 1 voor opdracht 1](https://karimgalal.github.io/frontendvoordesigners/opdracht1/v1/)
 
 
-Het probleem met de eerste demo/versie is dat de teller niet gereset werd wanneer de gebruikers ervoor kiezen om toch geen films op te slaan. Gebruikers kregen dan het nummertje 0 te zien naast het menu item "My list" en dat is niet de bedoeling.
+Het probleem bij de eerste demo/versie is dat de teller niet gereset wordt wanneer de gebruikers ervoor kiezen om toch geen films op te slaan. Gebruikers kregen dan het nummertje 0 te zien naast het menu item "My list" en dat is niet de bedoeling.
 Bij de tweede demo/versie heb ik dat probleem opgelost door een if statement te gebruiken zodat de teller alleen tevoorschijn komt wanneer er films zijn opgeslagen.
 
 [Demo 2 voor opdracht 1](https://karimgalal.github.io/frontendvoordesigners/opdracht1/v2/)
