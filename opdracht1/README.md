@@ -26,4 +26,4 @@ De gebruikers hebben zelf controle over de toevoeg knoppen en krijgen door midde
 > 11. Strong visual hierarchies work best
 A strong visual hierarchy is achieved when there is a clear viewing order to the visual elements on a screen. That is, when users view the same items in the same order every time. Weak visual hierarchies give little clue about where to rest one's gaze and end up feeling cluttered and confusing. In environments of great change it is hard to maintain a strong visual hierarchy because visual weight is relative: when everything is bold, nothing is bold. Should a single visually heavy element be added to a screen, the designer may need to reset the visual weight of all elements to once again achieve a strong hierarchy. Most people don't notice visual hierarchy but it is one of the easiest ways to strengthen (or weaken) a design.
 
-Alle toevoeg knoppen zijn op dezelfde locatie te vinden onder elke film. 
+Alle toevoeg en verwijder knoppen zijn op dezelfde locatie te vinden onder elke film en hebben dezelfde styling. Dat zorgt voor structuur en hierarchie.
