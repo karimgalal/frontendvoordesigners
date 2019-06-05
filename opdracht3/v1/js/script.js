@@ -14,16 +14,15 @@ request.addEventListener("load", function(){
   {
     var film = data[i];
 
-    var section = document.createElement("section"); // Voor elke film is er een eigen section waar data in komt
-
+    var wrapper = document.createElement("section"); // Voor elke film is er een eigen section waar data in komt
 
     var titel = document.createElement("h2");
     titel.textContent = film.title;
-    section.appendChild(titel);
+    wrapper.appendChild(titel);
 
-    if(film.title == "Evil Dead"){
-      section.setAttribute("class", "red");
-    }
+    // if(film.title == "Evil Dead"){
+    //   section.setAttribute("class", "red");
+    // }
 
     var simplePlot = document.createElement("p");
     simplePlot.textContent = film.simple_plot;

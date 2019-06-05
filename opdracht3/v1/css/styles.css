@@ -1,0 +1,12 @@
+img {
+    width: 15rem;
+}
+
+section {
+    list-style-type: none;
+    display: grid;
+    max-width: 75rem;
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 22rem));
+    justify-content: center;
+}
