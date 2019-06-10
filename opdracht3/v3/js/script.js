@@ -25,7 +25,6 @@ function setupDarkMode() {
 
     // https://developer.mozilla.org/en-US/docs/Web/API/Element/touchend_event
     document.addEventListener("touchend", function () {
-        // als darkmodeTimeout niet false is, dus als je het scherm loslaat binnen 700 ms,
         // haal deze timeout weg, want het is dan geen long press
         clearTimeout(darkmodeTimeout);
     });
@@ -37,15 +36,15 @@ request.addEventListener("load", function () {
     console.log("JSON data: ", request.response);
     data = request.response;
 
-    var loadButton = document.querySelector(".generate");
-    loadButton.addEventListener("click", function () {
+    var loadingButton = document.querySelector(".generate");
+    loadingButton.addEventListener("click", function () {
         var loadingGif = document.querySelector("header img");
         loadingGif.src = "img/loading.gif";
         loadingGif.classList.remove("hidden");
 
         setTimeout(function () {
             loadingGif.classList.add("hidden");
-            loadButton.classList.add("hidden");
+            loadingButton.classList.add("hidden");
 
             // Herhaal code voor elke film
             for (var i = 0; i < data.length; i++) {
@@ -56,31 +55,31 @@ request.addEventListener("load", function () {
                 filmSection.classList.add("film");
 
                 // Maak de cover foto en voeg het toe aan de film section
-                var coverFoto = document.createElement("img");
-                coverFoto.src = film.cover;
-                filmSection.appendChild(coverFoto);
+                var coverImage = document.createElement("img");
+                coverImage.src = film.cover;
+                filmSection.appendChild(coverImage);
 
                 // Maak de info section
-                var detailsSection = document.createElement("section");
-                detailsSection.classList.add("info");
+                var moreInfoSection = document.createElement("section");
+                moreInfoSection.classList.add("info");
 
                 // Maak de titel heading en voeg het toe aan de info section
                 var titel = document.createElement("h2");
                 titel.classList.add("titel");
                 titel.textContent = film.title;
-                detailsSection.appendChild(titel);
+                moreInfoSection.appendChild(titel);
 
                 // Maak de genres tag en voeg het toe aan de info section
                 var genres = document.createElement("p");
                 genres.classList.add("genres");
                 genres.textContent = film.genres.join(", ");
-                detailsSection.appendChild(genres);
+                moreInfoSection.appendChild(genres);
 
                 // Maak de more info button en voeg het toe aan de info section
                 var moreInfoButton = document.createElement("button");
                 moreInfoButton.classList.add("more-info");
                 moreInfoButton.textContent = "More Info";
-                detailsSection.appendChild(moreInfoButton);
+                moreInfoSection.appendChild(moreInfoButton);
 
                 // Maak de expanded info section en voeg het toe aan de film section
                 // let ipv var omdat expandedInfo wordt gebruikt voor de more info knop, expandedInfo als var
@@ -185,7 +184,7 @@ request.addEventListener("load", function () {
                 filmSection.appendChild(expandedInfo);
 
                 // Voeg details section aan de film section toe en de film section aan de container section
-                filmSection.appendChild(detailsSection);
+                filmSection.appendChild(moreInfoSection);
                 container.appendChild(filmSection);
             }
 
