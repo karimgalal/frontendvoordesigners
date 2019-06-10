@@ -53,6 +53,34 @@ Ik heb de films in een grid gezet zodat de website gestructureerd is. De knoppen
 
 #### Click
 ```
+request.addEventListener("load", function () {
+```
+
+```
 moreInfoButton.addEventListener("click", function () {
+}
+```
+
+#### Touchstart & Touchend
+```
+function setupDarkMode() {
+    var darkmodeTimeout;
+
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/touchstart_event
+    document.addEventListener("touchstart", function () {
+        // over 700 millisecondes toggle de class darkmode op elke film
+        var movies = document.querySelectorAll(".film");
+        darkmodeTimeout = setTimeout(function () {
+            for (var j = 0; j < movies.length; j++) {
+                movies[j].classList.toggle("darkmode");
+            }
+        }, 700);
+    });
+
+    // https://developer.mozilla.org/en-US/docs/Web/API/Element/touchend_event
+    document.addEventListener("touchend", function () {
+        // haal deze timeout weg, want het is dan geen long press
+        clearTimeout(darkmodeTimeout);
+    });
 }
 ```
