@@ -19,17 +19,22 @@ Tijdens het testen bleek dat het niet duidelijk was voor de gebruikers dat je op
 ## Versie 3
 [Versie 3](https://karimgalal.github.io/frontendvoordesigners/opdracht3/v3/)
 
-In versie 3 heb ik de voorgestelde 'more info' knop (zie bovenstaande test resultaten) toegevoegd en daaraan mijn Click UI event gekoppeld om de section met meer informatie te laten zien. Vervolgens heb ik ook een tweede UI event toegevoegd die ervoor zorgt dat gebruikers kunnen wisselen tussen light- en dark-mode door het scherm lang te 'pressen' (0.7 seconde). Daarnaast heb ik ook een zero state, loading state en error state toegevoegd.
+In versie 3 heb ik de voorgestelde 'more info' knop (zie bovenstaande test resultaten) toegevoegd en daaraan mijn Click UI event gekoppeld om de section met meer informatie te laten zien. Vervolgens heb ik ook een tweede UI event toegevoegd met behulp van een vriend die meer ervaren is in javascript dan ik die ervoor zorgt dat gebruikers kunnen wisselen tussen light- en dark-mode door het scherm lang te 'pressen' (0.7 seconde). Daarnaast heb ik ook een zero state, loading state en error state toegevoegd.
 
 
 ## UI Stack states
 ### Zero state
-
+Wanneer de gebruiker voor het eerst op de website komt dan krijgt hij/zij de zero state te zien. De films zijn dan nog niet geladen totdat hij op de "Generate films" knop klikt. 
 
 ### loading state
-
+Door op de "Generate films" knop te klikken krijgt de gebruiker een loading animatie te zien van een mais korrel die gekookt wordt tot een popcorn. Hierdoor krijgt de gebruiker te zien dat de films aan het laden zijn.
 
 ### Ideal state
-
+Na de loading state komen alle 6 films in beeld en kan de gebruiker op de "more info" knoppen klikken om meer informatie op te vragen. Dit is hoe de website daadwerkelijk hoort te werken.
 
 ### error state
+Bij de tweede film heb ik er express voor gezorg dat je dan een verborgen error section te zien krijgt om een beeld te geven van hoe een error state eruit kan zien.
+
+
+
+## Interface design principles 04, 09 en 11.
