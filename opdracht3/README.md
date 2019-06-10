@@ -1,4 +1,4 @@
-# frontend voor designers - opdracht 3
+# Frontend voor Designers - Opdracht 3
 
 Voor opdracht 3 heb ik een website die informatie over films weergeeft gemaakt met JSON data die met een REST API van een externe bron wordt ingeladen met Javascript. Gebruikers krijgen 6 films op de website te zien en door middel van UI events kunnen zij meer informatie over deze films opvragen en wisselen tussen light- en dark-mode.
 
@@ -38,3 +38,12 @@ Bij de tweede film heb ik er express voor gezorg dat je dan een verborgen error 
 
 
 ## Interface design principles 04, 09 en 11.
+### Keep users in control
+Ik heb ervoor gezorgd dat gebruikers altijd instructies te zien krijgen over de mogelijke UI events. Bovenaan de website is bijvoorbeeld aangegeven dat je door middel van een long press kan switchen tussen light- en dark-mode. De more info knoppen laten duidelijk weten wat je te wachten staat als je op zo'n knop klikt. Verder krijgen gebruikers ook de optie om terug te gaan bij onverwachte paginas zoals de error state.
+
+### Appearance follows behavior
+Ik heb ervoor gezorgd dat knoppen daadwerkelijk op knoppen lijken zodat de gebruikers kunnen voorspellen wat de buttons doen zonder er eerst op te klikken.
+
+### Strong visual hierarchies work best
+Ik heb de films in een grid gezet zodat de website gestructureerd is. De knoppen zijn allemaal rechts onder elke film te vinden, dat zorgt voor een consistente hierachie. Daarnaast slide de section met meer informatie ook van de rechter kant omdat de knoppen op de rechter kant staan.
+
