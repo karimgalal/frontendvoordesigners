@@ -12,7 +12,7 @@ In versie 1 heb ik eerst geleerd om data op te halen vanuit de API. Vervolgens h
 
 In versie 2 heb ik de data ik in de HTML gebruik vorm gegeven met css en heb ik mijn eerste UI event toegevoegd, namelijk het clicken op een film section om meer informatie te laten zien over de film. Dit doe ik door middel van een verborgen section waar de extra informatie in staat die tevoorschijn komt wanneer de gebruiker op de film section clickt.
 
-## Testen tijdens de les + Feedback van docent Koop Reynders
+## Testen tijdens de les + Feedback van docent Koop Reynders (Firefox)
 
 Tijdens het testen bleek dat het niet duidelijk was voor de gebruikers dat je op een film section kon clicken omdat dat nergens werd aangegeven. Er werd door de docent en medestudenten voorgesteld om gebruik te maken van een 'more info' knop die dezelfde kleur heeft als de verborgen section met meer informatie om het duidelijk te maken voor de gebruikers dat zij meer informatie kunnen opvragen over de films. De plaatsing en kleur van de knop zorgt voor duidelijkheid, discoverability en consistentie. Verder werd ik ook geadviseerd om verschillende UI states in de website te verwerken omdat ik daar nog niet aan had gedacht.
 
@@ -47,3 +47,12 @@ Ik heb ervoor gezorgd dat knoppen daadwerkelijk op knoppen lijken zodat de gebru
 ### 11. Strong visual hierarchies work best
 Ik heb de films in een grid gezet zodat de website gestructureerd is. De knoppen zijn allemaal rechts onder elke film te vinden, dat zorgt voor een consistente hierachie. Daarnaast slide de section met meer informatie ook van de rechter kant omdat de knoppen op de rechter kant staan.
 
+
+
+## UI Events
+
+#### Click
+```
+moreInfoButton.addEventListener("click", function () {
+}
+```
