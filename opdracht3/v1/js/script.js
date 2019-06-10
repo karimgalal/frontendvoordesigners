@@ -14,11 +14,11 @@ request.addEventListener("load", function(){
   {
     var film = data[i];
 
-    var wrapper = document.createElement("section"); // Voor elke film is er een eigen section waar data in komt
+    var section = document.createElement("section"); // Voor elke film is er een eigen section waar data in komt
 
     var titel = document.createElement("h2");
     titel.textContent = film.title;
-    wrapper.appendChild(titel);
+    section.appendChild(titel);
 
     // if(film.title == "Evil Dead"){
     //   section.setAttribute("class", "red");
