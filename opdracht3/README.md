@@ -1,17 +1,13 @@
 # frontend voor designers - opdracht 3
 
-Voor opdracht 3 ga je een functionaliteit ontwerpen met externe data, en testen. De data is JSON die met een REST API van een externe bron wordt ingeladen met Javascript. Als de data geladen is moeten gebruikers je ontwerp op verschillende manieren kunnen bedienen. Verschillende states zijn vormgeven en worden op het juiste moment getoond.
+Voor opdracht 3 heb ik een website die informatie over films weergeeft gemaakt met JSON data die met een REST API van een externe bron wordt ingeladen met Javascript. Gebruikers krijgen 6 films op de website te zien en door middel van UI events kunnen zij meer informatie over deze films opvragen en wisselen tussen light- en dark-mode.
 
-Dit is een voorbeeld van het laden van data en er html mee maken:
-[Code demo](https://koopreynders.github.io/frontendvoordesigners/opdracht3/XMLHttpRequest/)
+## Versie 1
+[Versie 1](https://karimgalal.github.io/frontendvoordesigners/opdracht3/v1/)
 
+In de eerste versie heb ik eerst geleerd om data op te halen vanuit de API. Vervolgens heb ik geleerd om html elementen te maken door middel van JavaScript en die te vullen met de API data.
 
-## JSON
-JSON van de movies data staat ook hier:
-deze uri kun je gebruiken voor een van de use case voor opdracht 3.
-[https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json](https://koopreynders.github.io/frontendvoordesigners/opdracht3/json/movies.json)
+## Versie 2
+[Versie 2](https://karimgalal.github.io/frontendvoordesigners/opdracht3/v2/)
 
-De JSON data is ook los, per film of genre of actors te gebruiken. Check die [hier](https://github.com/KoopReynders/frontendvoordesigners/tree/master/opdracht3/json).
-
-Dit is een voorbeeld van het laden van de film data:
-[Code demo](https://koopreynders.github.io/frontendvoordesigners/opdracht3/v1/)
+In versie 2 heb ik de data ik in de HTML gebruik vorm gegeven met css en heb ik mijn eerste UI event toegevoegd namelijk het clicken op een film section om meer informatie te laten zien over de film. 
