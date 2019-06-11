@@ -1,0 +1,174 @@
+/* Reset margin/padding */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../img/battle_bases_01bg_hd_by_xalien95-d4o49yb.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.logo {
+    padding: 2em 0 2em 0;
+    text-align: center;
+}
+
+header img {
+    width: 25%;
+}
+
+main {
+    background-color: #D9D9D9;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 10px #888888;
+    margin: 0 auto;
+    padding: 0.5em 0 0.5em 0;
+    text-align: center;
+    width: 53%;
+}
+
+main header h1 {
+    background-color: #f3f2f2;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border: 1px solid #b2b1b1;
+    font-size: 0.8em;
+    margin: 0 auto;
+    margin-bottom: 0.4em;
+    padding: 0.7em;
+    width: 95%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.battlefield {
+    background-image: url("../img/pokemon_bw_2_background_trainer_rips_by_arshes91-d4y2k47.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #b2b1b1;
+    height: 10em;
+    width: 43%;
+}
+
+.computer img {
+    float: right;
+    height: 8em;
+    margin-top: -2.5em;
+}
+
+.speler img {
+    float: left;
+    height: 8em;
+    margin-top: 2em;
+}
+
+.charizard{
+    width: 11.9em;
+    margin-right: 0.4em;
+}
+
+.blastoise {
+    width: 11.9em;
+    margin-left: 0.4em;
+}
+
+.charizard-info {
+    border: 1px solid #b2b1b1;
+    background-color: #F4F4F4;
+    padding: 1.4em 0 1.4em 0;
+    margin-bottom: 0.3em;
+
+}
+
+.charizard-leven {
+    border: 1px solid #b2b1b1;
+    background-color: #F4F4F4;
+    padding: 0.35em 0 0.35em 0;
+}
+
+.blastoise-info {
+    border: 1px solid #b2b1b1;
+    background-color: #F4F4F4;
+    padding: 1.4em 0 1.4em 0;
+    margin-bottom: 0.3em;
+
+}
+
+.blastoise-leven {
+    border: 1px solid #b2b1b1;
+    background-color: #F4F4F4;
+    padding: 0.35em 0 0.35em 0;
+}
+
+.blastoise-leven p, .charizard-leven p {
+    font-weight: bold;
+}
+
+.charizard h2{
+    font-size: 0.8em;
+}
+
+.charizard p {
+    font-size: 0.7em;
+    padding: 0.3em 0 0.3em 0;
+}
+
+.blastoise h2{
+    font-size: 0.8em;
+}
+
+.blastoise p {
+    font-size: 0.7em;
+    padding: 0.3em 0 0.3em 0;
+}
+
+.aanvallen h1 {
+    background-color: #f3f2f2;
+    border: 1px solid #b2b1b1;
+    font-size: 0.8em;
+    margin: 0 auto;
+    margin-top: 0.4em;
+    padding: 0.7em;
+    width: 94.8%;
+}
+
+input[type='button'] {
+    margin-top: 0.4em;
+    width: 23.85%;
+    height: 2.5em;
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+}
+
+.melding h1 {
+    background-color: #f3f2f2;
+    border: 1px solid #b2b1b1;
+    font-size: 1em;
+    margin: 0 auto;
+    margin-top: 0.3em;
+    padding: 0.38em;
+    width: 95.5%;
+}
+
+footer h1 {
+    background-color: #f3f2f2;
+    border: 1px solid #b2b1b1;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    font-size: 0.8em;
+    margin: 0 auto;
+    margin-top: 0.4em;
+    padding: 0.7em;
+    width: 94.8%;
+}
+
+
